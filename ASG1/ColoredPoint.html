@@ -1,0 +1,55 @@
+
+<script src="lib/webgl-utils.js"></script>
+<script src="lib/webgl-debug.js"></script>
+<script src="lib/cuon-utils.js"></script>
+<script src="lib/cuon-matrix.js"></script>
+<script src="ColoredPoint.js"></script>
+<script src="HelloTriangle.js"></script>
+<script src="Point.js"></script>
+<script src="Circle.js"></script>
+ <!-- <script src="donut.js"></script>-->
+
+ <!-- Add our squarejs file after done, 2 triangles -->
+
+
+<body onload="main()">
+  <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+  </canvas>
+
+  <p>
+    <button type="button" id="clearButton">Clear</button>
+  </p>
+
+  <br>
+  <label for="dmode">Drawing Mode:</label><br>
+  <button type="button" id="square">Square</button>
+  <button type="button" id="triangle">Triangle</button>
+  <button type="button" id="circle">Circle</button>
+  <button type="button" id="donut">Donut</button>
+
+  <br>
+  <br>
+
+  <label for="dmode">Shape Color:</label><br>
+  <p>
+    Red <input type="range" min="0" max="100" class="slider" id="redSlide">
+    Green <input type="range" min="0" max="100" class="slider" id="greenSlide">
+    Blue <input type="range" min="0" max="100" class="slider" id="blueSlide">
+    <br>
+    <br>
+  </p>
+
+  <label for="size">Shape Size:</label><br>
+
+  <p>
+    Size <input type="range" min="5" max="40" class="slider" id="sizeSlider">
+    (Circles) Segment Count <input type="range" min="5" max="40" class="slider" id="scount">
+
+  </p>
+
+
+
+
+</body>
+</html>
